@@ -4,11 +4,11 @@
          xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
          version="5.0">
     <servlet>
-        <servlet-name>NewServlet</servlet-name>
-        <servlet-class>org.ChenDong.week2.demo.NewServlet</servlet-class>
+        <servlet-name>MyServlet</servlet-name>
+        <servlet-class>org.example._chendong2022211001000301.ChenDong.week2.demo.NewServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>NewServlet</servlet-name>
-        <url-pattern>/new</url-pattern>
+        <servlet-name>MyServlet</servlet-name>
+        <url-pattern>/myServletPath</url-pattern>
     </servlet-mapping>
 </web-app>
