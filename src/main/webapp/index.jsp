@@ -7,7 +7,7 @@
 <body>
 <h1><%= "Design" %></h1>
 <br/>
-<form method="post">
+<form method="post" action="jumpmessage">
   <label>
     <input type="text" name="username" placeholder="Username">
   </label>
@@ -20,11 +20,16 @@
     <input type="email" name="email" placeholder="Email">
   </label>
   <br/>
+<%--  <label>--%>
+<%--    <select name="gender">--%>
+<%--      <option value="male">Male</option>--%>
+<%--      <option value="female">Female</option>--%>
+<%--    </select>--%>
+<%--  </label>--%>
+<%--  <br/>--%>
   <label>
-    <select name="gender">
-      <option value="male">Male</option>
-      <option value="female">Female</option>
-    </select>
+    Gender : <input type="radio" name="gender" value="male" checked>Male
+    <input type="radio" name="gender" value="female">Female
   </label>
   <br/>
   <label>

@@ -11,4 +11,12 @@
         <servlet-name>MyServlet</servlet-name>
         <url-pattern>/myServletPath</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>JumpServlet</servlet-name>
+        <servlet-class>org.example._chendong2022211001000301.ChenDong.week3.demo.JumpServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>JumpServlet</servlet-name>
+        <url-pattern>/jumpmessage</url-pattern>
+    </servlet-mapping>
 </web-app>
