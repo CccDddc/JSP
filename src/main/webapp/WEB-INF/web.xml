@@ -19,4 +19,12 @@
         <servlet-name>JumpServlet</servlet-name>
         <url-pattern>/jumpmessage</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>LifeServlet</servlet-name>
+        <servlet-class>org.example._chendong2022211001000301.ChenDong.week3.demo.LiveServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LifeServlet</servlet-name>
+        <url-pattern>/life</url-pattern>
+    </servlet-mapping>
 </web-app>
