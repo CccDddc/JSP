@@ -2,7 +2,8 @@
 <web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
-         version="5.0">
+         version="5.0"
+         metadata-complete="true">
     <servlet>
         <servlet-name>MyServlet</servlet-name>
         <servlet-class>org.example._chendong2022211001000301.ChenDong.week2.demo.NewServlet</servlet-class>
@@ -26,5 +27,52 @@
     <servlet-mapping>
         <servlet-name>LifeServlet</servlet-name>
         <url-pattern>/life</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>Showtwo</servlet-name>
+        <servlet-class>org.example._chendong2022211001000301.ChenDong.week4demo.Showtwo</servlet-class>
+        <init-param>
+            <param-name>name</param-name>
+            <param-value>ChenDong</param-value>
+        </init-param>
+        <init-param>
+            <param-name>id</param-name>
+            <param-value>2022211001000301</param-value>
+        </init-param>
+
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Showtwo</servlet-name>
+        <url-pattern>/show</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>JDBCServlet</servlet-name>
+        <servlet-class>org.example._chendong2022211001000301.ChenDong.week4demo.JDBCServletdemo</servlet-class>
+<!--        <init-param>-->
+<!--            <param-name>driver</param-name>-->
+<!--            <param-value>com.microsoft.sqlserver.jdbc.SQLServerDriver</param-value>-->
+<!--        </init-param>-->
+<!--        <init-param>-->
+<!--            <param-name>url</param-name>-->
+<!--            <param-value>jdbc:sqlserver://localhost:1433;DatabaseName=userdb;encrypt=true;trustServerCertificate=true</param-value>-->
+<!--        </init-param>-->
+<!--        <init-param>-->
+<!--            <param-name>username</param-name>-->
+<!--            <param-value>sa</param-value>-->
+<!--        </init-param>-->
+<!--        <init-param>-->
+<!--            <param-name>password</param-name>-->
+<!--            <param-value>cd240627</param-value>-->
+<!--        </init-param>-->
+<!--        <load-on-startup>1</load-on-startup>-->
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>JDBCServlet</servlet-name>
+        <url-pattern>/jdbc</url-pattern>
     </servlet-mapping>
 </web-app>

@@ -1,8 +1,9 @@
 package org.example._chendong2022211001000301.ChenDong.week3.demo;
 
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
 
 public class LiveServlet extends HttpServlet {
@@ -12,7 +13,7 @@ public class LiveServlet extends HttpServlet {
     @Override
     public void init() {
 
-        System.out.print("in init");
+        System.out.print("in init" + "/n");
     }
     @Override
     protected void doGet(HttpServletRequest request , HttpServletResponse response) {

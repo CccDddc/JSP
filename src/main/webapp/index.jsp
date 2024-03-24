@@ -7,7 +7,7 @@
 <body>
 <h1><%= "Design" %></h1>
 <br/>
-<form method="post" action="jumpmessage">
+<form method="post" action="jdbc">
   <label>
     <input type="text" name="username" placeholder="Username">
   </label>
